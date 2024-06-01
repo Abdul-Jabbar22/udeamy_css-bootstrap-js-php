@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myfunc(){
+            var a = 100
+            try{
+                var s = a.toUppercase();
+                alert("value of a variable is : " + a);
+
+            }
+            catch(e){
+                alert("error");
+            }
+            finally{
+                alert("finally block will always execute");
+            }
+        }
+    </script>
+</head>
+<body>
+    <p>Click the following to see result</p>
+    <form action="">
+        <input type="button" value="click me" onclick="myfunc();" name="" id="">
+    </form>
+  
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var mark1 = parseInt(prompt("Enter mark1", "Enter"));
+        var mark2 = parseInt(prompt("Enter mark2", "enter"));
+        var mark3 = parseInt(prompt("Enter mark3", "Enter"));
+
+        var total = mark1 + mark2 + mark3;
+        var percent = total * 100 / 150;
+        alert(percent);
+
+        if(percent >=80){
+            alert("Grade A")
+
+        }
+        else if (percent >= 60){
+            alert("grade B");
+        }
+        else if ( percent >=40){
+            alert("grade C")
+        }
+        else{
+            alert("Grade D");
+        }
+    </script>
+</body>
+</html>

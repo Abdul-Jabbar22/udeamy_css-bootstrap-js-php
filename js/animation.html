@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var arr = ["img1.png", "img2.png", "img3.png", "img4.png"];
+        var i = 1;
+        var ref;
+
+        function picLibrary() {
+            document.images[0].src = arr[i];
+            i++;
+            if (i >= arr.length) {
+                i = 0;
+            }
+        }
+
+        function start() {
+            ref = setInterval(picLibrary, 1000);
+        }
+
+        function stop() {
+            clearInterval(ref);
+        }
+    </script>
+</head>
+<body onload="start()">
+    <img src="img1.png" name="img1" alt="" onmouseover="stop()" onmouseout="start()">
+</body>
+</html>

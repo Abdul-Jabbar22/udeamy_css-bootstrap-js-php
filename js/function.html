@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sayHello(name, age){ //parameterize function
+
+            if ( name == "" || age == "" )
+            return;
+            document.write(name + " is " + age + " years old ");
+        }
+    </script>
+</head>
+<body >
+    <script>
+        // function hello(){
+        //     document.write("Hello EveryBody");
+        // }
+
+        // hello();
+
+
+    </script>
+<div style="color: greenyellow;">
+    <p>Click the follwoing button to call the function</p>
+    <form action="">
+        <input name="t1" placeholder="Enter name" type="text"> <br/>
+        <input name="t2" placeholder="Enger Age" type="text"> <br/>
+        <input type="button" onclick="sayHello(t1.value , t2.value)" name="" id="" value="say Hello">
+    </form>
+</div>
+</body>
+</html>

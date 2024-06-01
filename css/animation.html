@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#mydiv{
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-fill-mode: forwards; /* Keeps the last keyframe state */
+        }
+        @keyframes example{
+            from {background-color: rgb(0, 255, 106);}
+            to {background-color: yellow;}
+        }
+        div#mydiv1{
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            animation-name: example1;
+            animation-duration: 4s;
+            animation-fill-mode: forwards; /* Keeps the last keyframe state */
+        }
+        @keyframes example1{
+           0% {background-color: red;}
+           25% {background-color: yellow;}
+           50% {background-color: blue;}
+           100% {background-color: green;}
+        }
+        div#mydiv2{
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            position: relative; /* Added position for animation */
+            animation-name: example2;
+            animation-duration: 4s;
+            /* animation-delay: 2s; */
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes example2{
+           0% {background-color: red; left: 0px; top:0px}
+           25% {background-color: yellow; left:200px; top:0px}
+           50% {background-color: blue; left:200px; top:200px}
+           75% {background-color: green; left:0px; top:200px}
+           100% {background-color: red; left: 0px; top: 0px }
+        }
+    </style>
+</head>
+<body>
+    <h1>Example 1 of Animation</h1>
+    <div id="mydiv"></div>
+    <br>
+    <h1>Example 2 of Animation</h1>
+    <div id="mydiv1"></div>
+    <br>
+    <h1>Example 3 of Animation</h1>
+    <div id="mydiv2"></div>
+</body>
+</html>
